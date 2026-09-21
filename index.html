@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Gyanodaya Public School in Katra, Muzaffarpur, Bihar — academics, facilities, activities, admissions, notices, and contact information.">
+    <meta name="keywords" content="Gyanodaya Public School, Katra, Muzaffarpur, Bihar, School in Katra, Education, Admissions">
+    <title>Gyanodaya Public School | Katra, Muzaffarpur, Bihar</title>
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Gyanodaya Public School | Katra, Muzaffarpur, Bihar">
+    <meta property="og:description" content="Nurturing Minds. Building Futures. Quality education in Katra, Muzaffarpur.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* स्लाइडर का कंटेनर */
+.custom-slider {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px; /* किनारों को थोड़ा मोड़ने के लिए */
+}
+
+/* शुरुआत में बाकी इमेजेस को छुपाने के लिए */
+.slide-fade {
+    display: none;
+    animation: fadeEffect 1.5s; /* बदलने का स्मूथ इफ़ेक्ट */
+}
+
+.slide-fade.active {
+    display: block;
+}
+
+/* फ़ेडिंग इफ़ेक्ट (Smooth transitions) */
+@keyframes fadeEffect {
+    from { opacity: .4; } 
+    to { opacity: 1; }
+}
+
+/* डॉट्स (Dots) की स्टाइलिंग */
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* जब जो इमेज स्क्रीन पर होगी, उसका डॉट डार्क दिखेगा */
+.dot.active, .dot:hover {
+    background-color: #717171;
+}
+        /* --- ROOT VARIABLES & THEME CONFIGURATION --- */
+:root {
+    --primary-color: #1e3a8a;
+    --primary-light: #2563eb;
+    --primary-dark: #1e293b;
+    --accent-color: #f59e0b;
+    --text-color: #334155;
+    --text-light: #64748b;
+    --bg-color: #ffffff;
+    --bg-light: #f8fafc;
+    --bg-card: #ffffff;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --transition: all 0.3s ease;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+[data-theme="dark"] {
+    --primary-color: #3b82f6;
+    --primary-light: #60a5fa;
+    --primary-dark: #0f172a;
+    --accent-color: #fbbf24;
+    --text-color: #f1f5f9;
+    --text-light: #94a3b8;
+    --bg-color: #0f172a;
+    --bg-light: #1e293b;
+    --bg-card: #1e293b;
+    --border-color: #334155;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+/* --- RESET & GENERAL --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.center {
+    text-align: center;
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.75rem; font-weight: 800; }
+h2 { font-size: 2.25rem; font-weight: 700; }
+h3 { font-size: 1.5rem; font-weight: 600; }
+p { margin-bottom: 1rem; color: var(--text-light); }
+p.lead { font-size: 1.15rem; font-weight: 500; color: var(--primary-color); }
+
+.section-tag {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-light);
+    margin-bottom: 0.5rem;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0.5rem auto 0;
+}
+
+/* --- BUTTONS --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: var(--primary-dark);
+}
+
+.btn-secondary-light {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-secondary-light:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-lg {
+    padding: 0.9rem 2rem;
+    font-size: 1.05rem;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* --- HEADER & NAVIGATION --- */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-card);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-name {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.school-sub {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-light);
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-light);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    padding-top: 4rem;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 58, 138, 0.75) 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.location-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+}
+
+.hero-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-trust-bar {
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.25rem 0;
+    margin-top: auto;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.trust-item i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+/* --- CARDS & GRIDS --- */
+.cards-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+.cards-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.cards-grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+/* --- ABOUT SECTION --- */
+.about-images .main-img img {
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.vision-mission-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.vm-card {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.vm-icon {
+    font-size: 1.5rem;
+    color: var(--primary-light);
+    background: var(--bg-light);
+    padding: 0.8rem;
+    border-radius: var(--radius-sm);
+}
+
+/* --- PRINCIPAL MESSAGE --- */
+.director-card,
+.principal-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2.5rem;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+    align-items: center;
+}
+.director-img-container img,
+.principal-img-container img {
+    border-radius: var(--radius-md);
+    width: 100%;
+    height: 100%;
+}
+
+.quote-icon {
+    font-size: 2.5rem;
+    color: var(--primary-light);
+    opacity: 0.3;
+}
+.director-quote,
+.principal-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-color);
+    margin: 1rem 0 1.5rem;
+}
+.director-meta h4,
+.principal-meta h4 { margin-bottom: 0.2rem; }
+
+.director-meta span, 
+.principal-meta span { font-size: 0.85rem; color: var(--text-light); }
+
+/* --- MOBILE RESPONSIVE (यह कोड ऊपर वाले कोड के नीचे पेस्ट करें) --- */
+@media (max-width: 768px) {
+    .director-card,
+    .principal-card {
+        grid-template-columns: 1fr; /* मोबाइल पर 300px हटाकर सब एक के नीचे एक कर देगा */
+        gap: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .director-img-container,
+    .principal-img-container {
+        max-width: 250px;           /* मोबाइल पर फोटो का साइज थोड़ा छोटा और सुंदर दिखेगा */
+        margin: 0 auto;             /* फोटो को बीच में सेंटर कर देगा */
+    }
+
+    .director-img-container img,
+    .principal-img-container img {
+        height: auto;               /* फोटो की लंबाई-चौड़ाई का अनुपात खराब नहीं होगा */
+    }
+}
+
+/* --- TEACHERS GRID STYLE --- */
+.teachers-grid {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- ACADEMICS --- */
+.academic-card { text-align: center; }
+.card-icon {
+    font-size: 2rem;
+    color: var(--primary-light);
+    margin-bottom: 1rem;
+}
+
+.subjects-box {
+    margin-top: 3rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.subject-tag {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* --- HOLISTIC DEVELOPMENT --- */
+.feature-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: var(--primary-light);
+    margin-bottom: 1rem;
+}
+
+/* --- FACILITIES --- */
+.facility-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.card-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.facility-card:hover .card-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* --- ACTIVITIES & EVENTS --- */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.event-item {
+    display: flex;
+    gap: 1.25rem;
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    min-width: 65px;
+}
+
+.event-date span { font-size: 0.75rem; font-weight: 700; }
+.event-date strong { font-size: 1.25rem; line-height: 1; }
+
+/* --- GALLERY --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    height: 220px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 58, 138, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+.gallery-item:hover img { transform: scale(1.08); }
+
+/* Lightbox Modal */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.lightbox.active { display: flex; }
+.lightbox-content { max-width: 900px; max-height: 80vh; }
+.lightbox-content img { max-width: 100%; max-height: 80vh; border-radius: var(--radius-sm); }
+
+.lightbox-close, .lightbox-prev, .lightbox-next {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.lightbox-close { top: 1rem; right: 1rem; }
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+
+/* --- NOTICES --- */
+.notice-card { position: relative; }
+.notice-badge.new {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.notice-date { font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.5rem; }
+
+/* --- ADMISSIONS & FORMS --- */
+.admission-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.step-item { display: flex; gap: 1rem; }
+.step-number {
+    width: 36px; height: 36px;
+    background: var(--primary-light);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; }
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.error-msg { font-size: 0.75rem; color: #ef4444; display: none; margin-top: 0.25rem; }
+.form-group.invalid .error-msg { display: block; }
+.form-group.invalid .form-control { border-color: #ef4444; }
+
+.form-status {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    display: none;
+}
+
+.form-status.success { display: block; background: #dcfce7; color: #166534; }
+
+/* --- WHY CHOOSE US & TESTIMONIALS --- */
+.value-card { text-align: center; }
+.value-card i { font-size: 2rem; color: var(--accent-color); margin-bottom: 1rem; }
+
+.testimonial-card { position: relative; }
+.placeholder-tag {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    border: 1px dashed var(--border-color);
+    padding: 0.2rem 0.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.quote { font-style: italic; margin-bottom: 1rem; }
+
+/* --- CONTACT & MAP --- */
+.contact-details { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+.contact-item { display: flex; gap: 1rem; align-items: flex-start; }
+.contact-item i { font-size: 1.25rem; color: var(--primary-light); margin-top: 0.25rem; }
+
+.map-section { padding-bottom: 5rem; }
+.map-placeholder {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border: 2px dashed var(--border-color);
+    background: var(--bg-light);
+}
+
+.map-placeholder i { font-size: 2.5rem; color: var(--text-light); margin-bottom: 1rem; }
+
+/* --- CTA SECTION --- */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: #ffffff;
+    padding: 4rem 0;
+}
+
+.cta-section h2 { color: #ffffff; }
+.cta-section p { color: rgba(255, 255, 255, 0.85); max-width: 600px; margin: 0 auto 2rem; }
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* --- FOOTER --- */
+.site-footer {
+    background: var(--primary-dark);
+    color: #ffffff;
+    padding-top: 4rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-col h4 { color: #ffffff; margin-bottom: 1.25rem; font-size: 1.1rem; }
+.footer-col p { color: #94a3b8; font-size: 0.9rem; }
+.footer-col ul li { margin-bottom: 0.5rem; }
+.footer-col ul li a { color: #94a3b8; font-size: 0.9rem; }
+.footer-col ul li a:hover { color: #ffffff; }
+
+.social-links { display: flex; gap: 1rem; margin-top: 1rem; }
+.social-links a {
+    width: 36px; height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #ffffff;
+}
+
+.social-links a:hover { background: var(--primary-light); }
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+}
+
+.footer-bottom p { color: #64748b; font-size: 0.85rem; margin: 0; }
+
+/* --- ACCESSIBILITY (REDUCED MOTION) --- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 992px) {
+    .grid-2 { grid-template-columns: 1fr; gap: 2.5rem; }
+    .principal-card { grid-template-columns: 1fr; text-align: center; }
+    .principal-img-container { max-width: 250px; margin: 0 auto; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .nav-cta { display: none; }
+}
+
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    
+    .main-nav {
+        position: absolute;
+        top: 80px; left: 0; right: 0;
+        background: var(--bg-card);
+        border-bottom: 1px solid var(--border-color);
+        padding: 1.5rem;
+        display: none;
+        box-shadow: var(--shadow-md);
+    }
+
+    .main-nav.active { display: block; }
+    .nav-list { flex-direction: column; gap: 1rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+}    
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">
+                <img src="school logo.jpeg" alt="Gyanodaya Public School Logo" width="50" height="50"></img>
+                <div class="brand-text">
+                    <span class="school-name">GYANODAYA</span>
+                    <span class="school-sub">PUBLIC SCHOOL</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#academics" class="nav-link">Academics</a></li>
+                    <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#activities" class="nav-link">Activities</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#notices" class="nav-link">Notices</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid me-moon"></i>
+                </button>
+                <a href="#admissions" class="btn btn-primary nav-cta">Apply for Admission</a>
+                <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg">
+                <img src="images/school-hero.jpg" alt="Students learning in a modern school classroom environment" loading="eager" width="1920" height="1080" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1600&q=80';">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="location-badge"><i class="fa-solid fa-location-dot"></i> Katra, Muzaffarpur, Bihar</div>
+                <h1>Inspiring Young Minds to Learn, Lead & Succeed</h1>
+                <p>Creating a supportive learning environment where students develop knowledge, confidence, creativity, character, and the skills needed for a changing world.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary btn-lg">Explore Our School</a>
+                    <a href="#admissions" class="btn btn-secondary btn-lg">Admission Enquiry</a>
+                </div>
+            </div>
+            <div class="hero-trust-bar">
+                <div class="container trust-grid">
+                    <div class="trust-item"><i class="fa-solid fa-graduation-cap"></i> <span>Quality Education</span></div>
+                    <div class="trust-item"><i class="fa-solid fa-child-reaching"></i> <span>Holistic Development</span></div>
+                    <div class="trust-item"><i class="fa-solid fa-shield-halved"></i> <span>Safe Learning Environment</span></div>
+                    <div class="trust-item"><i class="fa-solid fa-users"></i> <span>Student-Centered Approach</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container grid-2">
+                <div class="about-images">
+            <div class="img-wrapper main-img text-center">
+    <!-- स्लाइडर का मुख्य बॉक्स -->
+    <div class="custom-slider">
+        <div class="slide-fade active">
+            <img src="teachers.jpeg" alt="Campus 1" style="width:100%; height:400px; object-fit:cover;">
+        </div>
+        <div class="slide-fade">
+            <img src="slider.jpeg" alt="Campus 2" style="width: 100%; height:400px; object-fit:cover;">
+        </div>
+        <div class="slide-fade">
+            <img src="vikram.jpeg" alt="Campus 3" style="width: 100%; height: 400px; object-fit:cover;">
+        </div>
+    </div>
+
+    <!-- नीचे दिखने वाले डॉट्स (Dots) -->
+    <div style="text-align:center; margin-top:15px;">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+                    
+    
+                <div class="about-text">
+                    <div class="section-tag">About Our Institution</div>
+                    <h2>Welcome to Gyanodaya Public School</h2>
+                    <p class="lead">Nurturing Minds. Building Futures.</p>
+                    <p>Gyanodaya Public School, Katra, Muzaffarpur, is presented as a learning community committed to helping students grow academically, socially, creatively, and personally.</p>
+                    
+                    <div class="vision-mission-grid">
+                        <div class="vm-card">
+                            <i class="fa-solid fa-eye vm-icon"></i>
+                            <div>
+                                <h3>Our Vision</h3>
+                                <p>To create an environment where every student is encouraged to learn, explore, think independently, and grow with confidence.</p>
+                            </div>
+                        </div>
+                        <div class="vm-card">
+                            <i class="fa-solid fa-bullseye vm-icon"></i>
+                            <div>
+                                <h3>Our Mission</h3>
+                                <p>To support meaningful learning through strong academic foundations, positive values, creativity, discipline, and holistic development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Director Message -->
+        <section class="section director-section bg-light">
+            <div class="container">
+                <div class="director-card">
+                    <div class="director-img-container">
+                        <img src="RAMPHAL SIR.jpeg" alt="Director of Gyanodaya Public School" loading="lazy" width="300" height="360" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80';">
+                    </div>
+                    <div class="director-content">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <h2>Message from the Director</h2>
+                        <p class="director-quote">"Education is the most powerful weapon which you can use to change the world. At Gyanodaya Public School, we focus not only on academic excellence but also on fostering values, discipline, and emotional growth. Our mission is to empower students to build a brighter future for themselves and the global community."</p>
+                        <div class="director-meta">
+                            <h4>RAMPHAL MAHTO</h4>
+                            <span>Director, Gyanodaya Public School</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Principal Message -->
+        <section class="section principal-section bg-light">
+            <div class="container">
+                <div class="principal-card">
+                    <div class="principal-img-container">
+                        <img src="raushan.jpeg" alt="Principal of Gyanodaya Public School" loading="lazy" width="300" height="360" onerror="this.onerror=null; ">
+                    </div>
+                    <div class="principal-content">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <h2>Message from the Principal</h2>
+                        <p class="principal-quote">"Education is not merely the acquisition of knowledge; it is the development of character, curiosity, and a lifelong commitment to growth. At Gyanodaya Public School, we strive to nurture each child's innate potential in a secure and inspiring atmosphere."</p>
+                        <div class="principal-meta">
+                            <h4>RAUSHAN KUMAR</h4>
+                            <span>Principal, Gyanodaya Public School</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- TEACHERS SECTION BUTTON & CONTAINER --- -->
+<section class="teachers-section section-bg-light">
+    <div class="container text-center" style="padding-top: 0; padding-bottom: 2.5rem;">
+        
+        <!-- बटन जो टीचर्स सेक्शन को खोलेगा/बंद करेगा -->
+        <button id="toggleTeachersBtn" class="btn-primary" style="padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; border: none; font-weight: bold;">
+            Our Teachers & Messages
+        </button>
+
+        <!-- टीचर्स का मुख्य बॉक्स (शुरुआत में hidden रहेगा) -->
+        <div id="teachersContainer" class="teachers-grid" style="display: none; margin-top: 2.5rem;">
+            
+            <!-- Teacher 1 -->
+            <div class="director-card" style="margin-bottom: 2rem;">
+                <div class="director-img-container">
+                    <img src="mohan.jpeg" alt="Teacher Photo" loading="lazy">
+                </div>
+                <div class="principal-content" style="text-align: left;">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="principal-quote">"Teaching is the profession that teaches all the other professions. My goal is to make learning engaging and meaningful for every child."</p>
+                    <div class="principal-meta">
+                        <h4>MOHAN KUMAR</h4>
+                        <span>Senior Math Teacher, Gyanodaya Public School</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teacher 2 -->
+            <div class="director-card">
+                <div class="director-img-container">
+                    <img src="rajesh.jpeg" alt="Teacher Photo" loading="lazy">
+                </div>
+                <div class="principal-content" style="text-align: left;">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="principal-quote">"We don't just teach books, we shape character and curiosity in young minds."</p>
+                    <div class="principal-meta">
+                        <h4>RAJESH KUMAR</h4>
+                        <span>Science Teacher, Gyanodaya Public School</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Teacher 3 -->
+            <div class="director-card">
+                <div class="director-img-container">
+                    <img src="rakesh.jpeg" alt="Teacher Photo" loading="lazy">
+                </div>
+                <div class="principal-content" style="text-align: left;">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="principal-quote">"Learning is not the filling of a vessel, but the kindling of a flame."</p>
+                    <div class="principal-meta">
+                        <h4>RAKESH KUMAR</h4>
+                        <span>English Teacher, Gyanodaya Public School</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- Academics Section -->
+        <section class="section academics-section" id="academics">
+            <div class="container">
+                <div class="section-header center">
+                    <div class="section-tag">Educational Journey</div>
+                    <h2>Academic Programs</h2>
+                    <p>A structured, supportive learning model designed to prepare students for academic and life success.</p>
+                </div>
+
+                <div class="cards-grid-3">
+                    <div class="card academic-card">
+                        <div class="card-icon"><i class="fa-solid fa-shapes"></i></div>
+                        <h3>Primary Education</h3>
+                        <p>Building strong foundations in literacy, numeracy, and social interaction through engaging and age-appropriate learning strategies.</p>
+                    </div>
+                    <div class="card academic-card">
+                        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Middle School</h3>
+                        <p>Developing deeper conceptual understanding, critical thinking, effective communication skills, and collaborative problem-solving.</p>
+                    </div>
+                    <div class="card academic-card">
+                        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Secondary Education</h3>
+                        <p>Preparing students thoroughly for academic challenges, responsible decision-making, higher education, and future opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="subjects-box">
+                    <h3>Core Learning Areas & Subjects</h3>
+                    <div class="tags-wrapper">
+                        <span class="subject-tag"><i class="fa-solid fa-calculator"></i> Mathematics</span>
+                        <span class="subject-tag"><i class="fa-solid fa-flask"></i> Science</span>
+                        <span class="subject-tag"><i class="fa-solid fa-book-open"></i> English</span>
+                        <span class="subject-tag"><i class="fa-solid fa-language"></i> Hindi</span>
+                        <span class="subject-tag"><i class="fa-solid fa-globe"></i> Social Science</span>
+                        <span class="subject-tag"><i class="fa-solid fa-laptop-code"></i> Computer Education</span>
+                        <span class="subject-tag"><i class="fa-solid fa-lightbulb"></i> General Knowledge</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Holistic Development -->
+        <section class="section holistic-section bg-light">
+            <div class="container">
+                <div class="section-header center">
+                    <div class="section-tag">Co-Curricular Growth</div>
+                    <h2>Beyond the Classroom</h2>
+                    <p>Fostering well-rounded individuals through diverse activities and skill-building pursuits.</p>
+                </div>
+
+                <div class="cards-grid-4">
+                    <div class="card feature-card">
+                        <i class="fa-solid fa-volleyball feature-icon"></i>
+                        <h3>Sports & Athletics</h3>
+                        <p>Encouraging physical fitness, teamwork, sportsmanship, and discipline.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fa-solid fa-palette feature-icon"></i>
+                        <h3>Art & Creativity</h3>
+                        <p>Nurturing self-expression through drawing, painting, and craftsmanship.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fa-solid fa-masks-theater feature-icon"></i>
+                        <h3>Cultural Activities</h3>
+                        <p>Celebrating heritage through music, dance, drama, and school festivals.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fa-solid fa-microchip feature-icon"></i>
+                        <h3>Technology</h3>
+                        <p>Familiarizing students with basic computing skills and digital awareness.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fa-solid fa-comments feature-icon"></i>
+                        <h3>Communication</h3>
+                        <p>Building articulate speakers through debates, recitations, and presentations.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fa-solid fa-user-gear feature-icon"></i>
+                        <h3>Leadership</h3>
+                        <p>Instilling initiative, student responsibilities, and decision-making.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fa-solid fa-people-group feature-icon"></i>
+                        <h3>Teamwork</h3>
+                        <p>Promoting collaborative projects, group activities, and peer support.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <i class="fa-solid fa-leaf feature-icon"></i>
+                        <h3>Eco Awareness</h3>
+                        <p>Creating environmental consciousness through green drives and plantation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section class="section facilities-section" id="facilities">
+            <div class="container">
+                <div class="section-header center">
+                    <div class="section-tag">Campus Infrastructure</div>
+                    <h2>School Facilities</h2>
+                    <p>Designed to support an engaging academic experience and safety for every student.</p>
+                </div>
+
+                <div class="cards-grid-3">
+                    <div class="card facility-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/classroom.jpg" alt="Modern interactive classroom" loading="lazy" width="400" height="250" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+                        <div class="card-body">
+                            <h3>Smart Classrooms</h3>
+                            <p>Technology-supported learning environment encouraging active student participation and visual understanding.</p>
+                        </div>
+                    </div>
+                    <div class="card facility-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/computer-lab.jpg" alt="Computer laboratory with modern systems" loading="lazy" width="400" height="250" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+                        <div class="card-body">
+                            <h3>Computer Lab</h3>
+                            <p>Hands-on exposure to computer science fundamentals and modern digital learning tools.</p>
+                        </div>
+                    </div>
+                    <div class="card facility-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/science-lab.jpg" alt="Students conducting experiments in science lab" loading="lazy" width="400" height="250" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+                        <div class="card-body">
+                            <h3>Science Laboratory</h3>
+                            <p>Encouraging practical exploration, scientific inquiry, and experiential learning under guidance.</p>
+                        </div>
+                    </div>
+                    <div class="card facility-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/library.jpg" alt="School library filled with books" loading="lazy" width="400" height="250" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+                        <div class="card-body">
+                            <h3>Resource Library</h3>
+                            <p>A quiet space encouraging reading habits, independent research, and literacy growth.</p>
+                        </div>
+                    </div>
+                    <div class="card facility-card">
+                        <div class="card-img-wrapper">
+                            <img src="sport.jpeg" alt="Students playing on sports ground" loading="lazy" width="400" height="250" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576858574138-d6a049afa968?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+                        <div class="card-body">
+                            <h3>Sports Infrastructure</h3>
+                            <p>Open spaces and outdoor facilities for physical training, games, and recreation.</p>
+                        </div>
+                    </div>
+                    <div class="card facility-card">
+                        <div class="card-img-wrapper">
+                            <img src="images/activity.jpg" alt="Safe and orderly school campus grounds" loading="lazy" width="400" height="250" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+                        <div class="card-body">
+                            <h3>Safe Campus</h3>
+                            <p>A secure, supportive, and disciplined environment structured for continuous student wellbeing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="section activities-section bg-light" id="activities">
+            <div class="container">
+                <div class="section-header center">
+                    <div class="section-tag">Life At Gyanodaya</div>
+                    <h2>School Activities & Events</h2>
+                    <p>Creating lasting memories and learning experiences through events throughout the year.</p>
+                </div>
+
+                <div class="events-grid">
+                    <div class="event-item">
+                        <div class="event-date"><span>FEB</span><strong>15</strong></div>
+                        <div class="event-info">
+                            <h3>Annual Sports Day</h3>
+                            <p>A day of track events, team games, physical fitness showcases, and sportsmanship.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><span>AUG</span><strong>15</strong></div>
+                        <div class="event-info">
+                            <h3>Independence Day Celebration</h3>
+                            <p>Flag hoisting ceremonies, patriotic performances, and cultural programs by students.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><span>SEP</span><strong>05</strong></div>
+                        <div class="event-info">
+                            <h3>Teachers' Day Program</h3>
+                            <p>Student-led cultural appreciation events honoring our dedicated teaching faculty.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><span>NOV</span><strong>14</strong></div>
+                        <div class="event-info">
+                            <h3>Children's Day & Exhibition</h3>
+                            <p>A fun-filled day featuring student science projects, art displays, and activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header center">
+                    <div class="section-tag">Visual Tour</div>
+                    <h2>Photo Gallery</h2>
+                    <p>Glimpses of daily academic life, achievements, celebrations, and campus facilities.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-index="0">
+                        <img src="images/gallery-01.jpg" alt="Students participating in classroom learning" loading="lazy" width="400" height="300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80';">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-index="1">
+                        <img src="images/gallery-02.jpg" alt="School library reading session" loading="lazy" width="400" height="300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80';">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-index="2">
+                        <img src="images/gallery-03.jpg" alt="Science practical demonstration" loading="lazy" width="400" height="300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80';">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-index="3">
+                        <img src="sport.jpeg" alt="Students outdoor athletic activities" loading="lazy" width="400" height="300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=600&q=80';">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-index="4">
+                        <img src="images/gallery-05.jpg" alt="Art and craft competition showcase" loading="lazy" width="400" height="300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80';">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-index="5">
+                        <img src="images/gallery-06.jpg" alt="School cultural program performance" loading="lazy" width="400" height="300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80';">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image View">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous Image"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="lightbox-content">
+                <img id="lightboxImg" src="" alt="Enlarged view">
+            </div>
+            <button class="lightbox-next" id="lightboxNext" aria-label="Next Image"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Notice Board Section -->
+        <section class="section notices-section bg-light" id="notices">
+            <div class="container">
+                <div class="section-header center">
+                    <div class="section-tag">Updates & Announcements</div>
+                    <h2>Notice Board</h2>
+                    <p>Stay informed about important school notices, schedules, and circulars.</p>
+                </div>
+
+                <div class="cards-grid-3">
+                    <div class="card notice-card">
+                        <div class="notice-badge new">New</div>
+                        <div class="notice-date"><i class="fa-regular fa-calendar"></i> Placeholder Notice</div>
+                        <h3>Admission Enquiry Period</h3>
+                        <p>Enquiries for upcoming academic sessions are currently open. Parents can submit forms online or at campus.</p>
+                    </div>
+                    <div class="card notice-card">
+                        <div class="notice-date"><i class="fa-regular fa-calendar"></i> Placeholder Notice</div>
+                        <h3>Parent-Teacher Meeting</h3>
+                        <p>Scheduled interaction for parents to discuss student academic progress with class teachers.</p>
+                    </div>
+                    <div class="card notice-card">
+                        <div class="notice-date"><i class="fa-regular fa-calendar"></i> Placeholder Notice</div>
+                        <h3>Upcoming Academic Schedule</h3>
+                        <p>Students are advised to check the official schedule on the campus bulletin board for examination details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section class="section admissions-section" id="admissions">
+            <div class="container grid-2">
+                <div class="admissions-info">
+                    <div class="section-tag">Join Our School</div>
+                    <h2>Interested in Admission?</h2>
+                    <p>We welcome parents seeking a structured and encouraging learning environment for their children.</p>
+
+                    <div class="admission-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-details">
+                                <h3>Submit Enquiry</h3>
+                                <p>Fill out the online enquiry form or visit the school office in Katra.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-details">
+                                <h3>Connect With School</h3>
+                                <p>Our office team provides details regarding eligibility and documentation.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-details">
+                                <h3>Complete Formalities</h3>
+                                <p>Submit required paperwork and complete verification.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-details">
+                                <h3>Begin Learning Journey</h3>
+                                <p>Welcome to the Gyanodaya Public School student community!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admissions-form-container card">
+                    <h3>Admission Enquiry Form</h3>
+                    <form id="admissionForm" novalidate>
+                        <div class="form-group">
+                            <label for="studentName">Student Full Name *</label>
+                            <input type="text" id="studentName" name="studentName" class="form-control" required>
+                            <span class="error-msg">Please enter student's name</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentName">Parent / Guardian Name *</label>
+                            <input type="text" id="parentName" name="parentName" class="form-control" required>
+                            <span class="error-msg">Please enter parent/guardian name</span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="grade">Grade / Class Seeking *</label>
+                                <select id="grade" name="grade" class="form-control" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="Primary">Primary</option>
+                                    <option value="Middle">Middle School</option>
+                                    <option value="Secondary">Secondary</option>
+                                </select>
+                                <span class="error-msg">Please select a grade</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" pattern="[0-9]{10}" required>
+                                <span class="error-msg">Please enter a valid 10-digit phone number</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                            <span class="error-msg">Please enter a valid email address</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message / Enquiry Details</label>
+                            <textarea id="message" name="message" rows="3" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
+                        <div class="form-status" id="admissionFormStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section why-us-section bg-light">
+            <div class="container">
+                <div class="section-header center">
+                    <div class="section-tag">School Strengths</div>
+                    <h2>Why Choose Gyanodaya Public School?</h2>
+                    <p>Qualitative commitment to academic principles, growth, and character.</p>
+                </div>
+
+                <div class="cards-grid-4">
+                    <div class="card value-card">
+                        <i class="fa-solid fa-book-reader"></i>
+                        <h3>Focus on Learning</h3>
+                        <p>Prioritizing core academic clarity and structured educational progression.</p>
+                    </div>
+                    <div class="card value-card">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <h3>Supportive Atmosphere</h3>
+                        <p>Providing a safe, respectful, and nurturing space for every student.</p>
+                    </div>
+                    <div class="card value-card">
+                        <i class="fa-solid fa-star"></i>
+                        <h3>Holistic Opportunities</h3>
+                        <p>Balancing traditional academic study with creative and physical pursuits.</p>
+                    </div>
+                    <div class="card value-card">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                        <h3>Values & Discipline</h3>
+                        <p>Instilling mutual respect, responsibility, and strong personal integrity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Placeholder -->
+        <section class="section testimonials-section">
+            <div class="container">
+                <div class="section-header center">
+                    <div class="section-tag">Community Feedback</div>
+                    <h2>Parent Insights</h2>
+                </div>
+
+                <div class="cards-grid-2">
+                    <div class="card testimonial-card">
+                        <div class="placeholder-tag">[ Parent Feedback Placeholder ]</div>
+                        <p class="quote">"This card serves as a structured placeholder for verified parent testimonials upon publication approval by school administration."</p>
+                        <div class="author-meta">
+                            <strong>Parent / Guardian</strong>
+                            <span>Katra, Muzaffarpur</span>
+                        </div>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="placeholder-tag">[ Parent Feedback Placeholder ]</div>
+                        <p class="quote">"This card serves as a structured placeholder for verified parent testimonials upon publication approval by school administration."</p>
+                        <div class="author-meta">
+                            <strong>Parent / Guardian</strong>
+                            <span>Katra, Muzaffarpur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section bg-light" id="contact">
+            <div class="container grid-2">
+                <div class="contact-info">
+                    <div class="section-tag">Get In Touch</div>
+                    <h2>Contact Information</h2>
+                    <p>Have questions regarding admissions or academic details? Feel free to connect with our campus office.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Gyanodaya Public School<br>Katra, Muzaffarpur, Bihar, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+91 8434717164</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>rausha@gyanodaya.com </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container card">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="contactName" class="form-control" required>
+                            <span class="error-msg">Please enter your name</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" class="form-control" required>
+                            <span class="error-msg">Please enter a valid email address</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <input type="text" id="contactSubject" name="contactSubject" class="form-control" required>
+                            <span class="error-msg">Please enter a subject</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="4" class="form-control" required></textarea>
+                            <span class="error-msg">Please enter your message</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        <div class="form-status" id="contactFormStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-placeholder card">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h3>Google Map Location</h3>
+                    <p>[INSERT VERIFIED GOOGLE MAP EMBED HERE]</p>
+                    <small>Katra, Muzaffarpur, Bihar, India</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact CTA -->
+        <section class="cta-section">
+            <div class="container center">
+                <h2>Have Questions About Our School?</h2>
+                <p>Connect with Gyanodaya Public School to learn more about admissions, academics, activities, and school life.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact School</a>
+                    <a href="#admissions" class="btn btn-secondary-light">Admission Enquiry</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Multi-Column Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <div class="brand-logo">
+                    <span class="school-name">GYANODAYA</span>
+                    <span class="school-sub">PUBLIC SCHOOL</span>
+                </div>
+                <p>Nurturing Minds. Building Futures.</p>
+                <p class="location-text">Katra, Muzaffarpur, Bihar, India</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About School</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#facilities">Campus Facilities</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#gallery">Photo Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Admissions</h4>
+                <ul>
+                    <li><a href="#admissions">Admission Enquiry</a></li>
+                    <li><a href="#admissions">Process & Steps</a></li>
+                    <li><a href="#notices">Latest Notices</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>Phone: 8434717164</p>
+                <p>Email: rausha@gyanodaya.com </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom center">
+            <div class="container">
+                <p>&copy; 2026 Gyanodaya Public School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide-fade");
+    let dots = document.getElementsByClassName("dot");
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    
+    slides[slideIndex-1].classList.add("active");  
+    dots[slideIndex-1].classList.add("active");
+    
+    setTimeout(showSlides, 3000); // 3000 यानी हर 3 सेकंड में इमेज बदलेगी
+}
+
+// डॉट्स पर क्लिक करने पर इमेज बदलने के लिए
+function currentSlide(n) {
+    slideIndex = n - 1;
+    let i;
+    let slides = document.getElementsByClassName("slide-fade");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    slides[slideIndex].classList.add("active");
+    dots[slideIndex].classList.add("active");
+}
+document.addEventListener('DOMContentLoaded', () => {
+    // --- 1. DARK MODE TOGGLE ---
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const themeIcon = themeToggleBtn.querySelector('i');
+    
+    // Check saved local storage or preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme === 'dark');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const isDark = currentTheme === 'dark';
+        const newTheme = isDark ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(!isDark);
+    });
+
+    function updateThemeIcon(isDark) {
+        if (isDark) {
+            themeIcon.className = 'fa-solid fa-sun';
+        } else {
+            themeIcon.className = 'fa-solid fa-moon';
+        }
+    }
+
+    // --- 2. MOBILE NAVIGATION HAMBURGER ---
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    hamburger.addEventListener('click', () => {
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !expanded);
+        mainNav.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
+    // --- 3. LIGHTBOX GALLERY ---
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let currentIndex = 0;
+    const imagesList = Array.from(galleryItems).map(item => {
+        const img = item.querySelector('img');
+        return { src: img.src, alt: img.alt };
+    });
+
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            currentIndex = parseInt(item.getAttribute('data-index'), 10);
+            openLightbox(currentIndex);
+        });
+    });
+
+    function openLightbox(index) {
+        lightboxImg.src = imagesList[index].src;
+        lightboxImg.alt = imagesList[index].alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    lightboxNext.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % imagesList.length;
+        openLightbox(currentIndex);
+    });
+
+    lightboxPrev.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + imagesList.length) % imagesList.length;
+        openLightbox(currentIndex);
+    });
+
+    // Keyboard accessibility for Lightbox
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') lightboxNext.click();
+        if (e.key === 'ArrowLeft') lightboxPrev.click();
+    });
+
+    // --- 5. TOGGLE TEACHERS SECTION ---
+const toggleTeachersBtn = document.getElementById('toggleTeachersBtn');
+const teachersContainer = document.getElementById('teachersContainer');
+
+if (toggleTeachersBtn && teachersContainer) {
+    toggleTeachersBtn.addEventListener('click', () => {
+        if (teachersContainer.style.display === 'none') {
+            teachersContainer.style.display = 'block';
+            toggleTeachersBtn.textContent = 'Hide Teachers & Messages';
+        } else {
+            teachersContainer.style.display = 'none';
+            toggleTeachersBtn.textContent = 'Our Teachers & Messages';
+        }
+    });
+}
+
+
+
+    // --- 4. FORM VALIDATION & HANDLING ---
+    function setupFormValidation(formId, statusId) {
+        const form = document.getElementById(formId);
+        const status = document.getElementById(statusId);
+
+        if (!form) return;
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            const requiredInputs = form.querySelectorAll('[required]');
+            requiredInputs.forEach(input => {
+                const group = input.closest('.form-group');
+                if (!input.value.trim() || (input.type === 'checkbox' && !input.checked)) {
+                    group.classList.add('invalid');
+                    isValid = false;
+                } else if (input.type === 'email' && !validateEmail(input.value)) {
+                    group.classList.add('invalid');
+                    isValid = false;
+                } else if (input.pattern && !new RegExp('^' + input.pattern + '$').test(input.value)) {
+                    group.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    group.classList.remove('invalid');
+                }
+            });
+
+            if (isValid) {
+                status.className = 'form-status success';
+                status.textContent = 'Thank you! Your enquiry has been received. Our office will get back to you shortly.';
+                form.reset();
+                setTimeout(() => {
+                    status.style.display = 'none';
+                }, 5000);
+            }
+        });
+
+        // Real-time input error clearing
+        form.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('input', () => {
+                const group = input.closest('.form-group');
+                if (group.classList.contains('invalid')) {
+                    group.classList.remove('invalid');
+                }
+            });
+        });
+    }
+
+    function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    setupFormValidation('admissionForm', 'admissionFormStatus');
+    setupFormValidation('contactForm', 'contactFormStatus');
+});
+
+</script>
+</body>
+</html>
